@@ -1,0 +1,118 @@
+//
+// Global settings to help the UCSS configuration.
+//
+
+// Applies a prefix to every class generated.
+
+$ucss-prefix: "ucss-" !default;
+
+// The delimiter used between the property and the modifier.
+
+$ucss-delimiter: "--" !default;
+
+// Defines if CSS classes should or not be created by default.
+
+$ucss-generate-classes: true !default;
+
+// Defines which properties will be generated.
+//
+// The following list contains all the supported properties and you can remove
+// the undesired properties.
+//
+// The first parameter defines the property name used for the class naming and
+// the second paramenter allows to generate or not the CSS classes.
+//
+// The final classname, not changing the defaults, will looks like:
+// `.ucss-color--blue`.
+
+$ucss-properties: (
+  // Background
+  background-color:      ("background-color", $ucss-generate-classes),
+  background-image:      ("background-image", $ucss-generate-classes),
+  background-repeat:     ("background-repeat", $ucss-generate-classes),
+  background-attachment: ("background-attachment", $ucss-generate-classes),
+  background-position:   ("background-position", $ucss-generate-classes),
+  background:            ("background", $ucss-generate-classes),
+
+  // Border
+  border-width: ("border-width", $ucss-generate-classes),
+  border-color: ("border-color", $ucss-generate-classes),
+  border-style: ("border-style", $ucss-generate-classes),
+  border:       ("border", $ucss-generate-classes),
+
+  // Outline
+  outline-width: ("outline-width", $ucss-generate-classes),
+  outline-style: ("outline-style", $ucss-generate-classes),
+  outline-color: ("outline-color", $ucss-generate-classes),
+  outline:       ("outline", $ucss-generate-classes),
+
+  // Color
+  color:   ("color", $ucss-generate-classes),
+  opacity: ("opacity", $ucss-generate-classes),
+
+  // Text
+  text-align:      ("text-align", $ucss-generate-classes),
+  text-decoration: ("text-decoration", $ucss-generate-classes),
+  text-indent:     ("text-indent", $ucss-generate-classes),
+  text-transform:  ("text-transform", $ucss-generate-classes),
+  line-height:     ("line-height", $ucss-generate-classes),
+  vertical-align:  ("vertical-align", $ucss-generate-classes),
+  letter-spacing:  ("letter-spacing", $ucss-generate-classes),
+  word-spacing:    ("word-spacing", $ucss-generate-classes),
+  white-space:     ("white-space", $ucss-generate-classes),
+  direction:       ("direction", $ucss-generate-classes),
+
+  // Font
+  font-family:  ("font-family", $ucss-generate-classes),
+  font-style:   ("font-style", $ucss-generate-classes),
+  font-variant: ("font-variant", $ucss-generate-classes),
+  font-weight:  ("font-weight", $ucss-generate-classes),
+  font-size:    ("font-size", $ucss-generate-classes),
+  font:         ("font", $ucss-generate-classes),
+
+  // Margin & Padding
+  margin:  ("margin", $ucss-generate-classes),
+  padding: ("padding", $ucss-generate-classes),
+
+  // List
+  list-style-type:     ("list-style-type", $ucss-generate-classes),
+  list-style-image:    ("list-style-image", $ucss-generate-classes),
+  list-style-position: ("list-style-position", $ucss-generate-classes),
+  list-style:          ("list-style", $ucss-generate-classes),
+
+  // Box Size
+  width:      ("width", $ucss-generate-classes),
+  min-width:  ("min-width", $ucss-generate-classes),
+  max-width:  ("max-width", $ucss-generate-classes),
+  height:     ("height", $ucss-generate-classes),
+  min-height: ("min-height", $ucss-generate-classes),
+  max-height: ("max-height", $ucss-generate-classes),
+
+  // Visual Formatting
+  display:    ("display", $ucss-generate-classes),
+  position:   ("position", $ucss-generate-classes),
+  top:        ("top", $ucss-generate-classes),
+  right:      ("right", $ucss-generate-classes),
+  bottom:     ("bottom", $ucss-generate-classes),
+  left:       ("left", $ucss-generate-classes),
+  float:      ("float", $ucss-generate-classes),
+  clear:      ("clear", $ucss-generate-classes),
+  z-index:    ("z-index", $ucss-generate-classes),
+  overflow:   ("overflow", $ucss-generate-classes),
+  clip:       ("clip", $ucss-generate-classes),
+  visibility: ("visibility", $ucss-generate-classes),
+  cursor:     ("cursor", $ucss-generate-classes),
+
+  // Table
+  caption-side:    ("caption-side", $ucss-generate-classes),
+  table-layout:    ("table-layout", $ucss-generate-classes),
+  border-collapse: ("border-collapse", $ucss-generate-classes),
+  border-spacing:  ("border-spacing", $ucss-generate-classes),
+  empty-cells:     ("empty-cells", $ucss-generate-classes),
+
+  // Generated Content
+  content:           ("content", $ucss-generate-classes),
+  quotes:            ("quotes", $ucss-generate-classes),
+  counter-reset:     ("counter-reset", $ucss-generate-classes),
+  counter-increment: ("counter-increment", $ucss-generate-classes)
+) !default;

@@ -1,0 +1,63 @@
+//
+// Table Properties.
+//
+// Support:
+//
+// * caption-side
+// * table-layout
+// * border-collapse
+// * border-spacing
+// * empty-cells
+//
+
+// Caption-side.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/caption-side
+
+$ucss-caption-side: (
+  "top":    top,
+  "bottom": bottom
+) !default;
+
+@include ucss-export(caption-side, $ucss-caption-side);
+
+// Table-layout.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/table-layout
+
+$ucss-table-layout: (
+  "auto":  auto,
+  "fixed": fixed
+) !default;
+
+@include ucss-export(table-layout, $ucss-table-layout);
+
+// Border-collapse.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/border-collapse
+
+$ucss-border-collapse: (
+  "collapse": collapse,
+  "separate": separate
+) !default;
+
+@include ucss-export(border-collapse, $ucss-border-collapse);
+
+// Border-spacing.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/border-spacing
+
+$ucss-border-spacing: () !default;
+
+@include ucss-export(border-spacing, $ucss-border-spacing);
+
+// Empty-cells.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/empty-cells
+
+$ucss-empty-cells: (
+  "show": show,
+  "hide": hide
+) !default;
+
+@include ucss-export(empty-cells, $ucss-empty-cells);

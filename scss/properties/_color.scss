@@ -1,0 +1,47 @@
+//
+// Color Properties.
+//
+// Support:
+//
+// * color
+// * opacity
+//
+
+// Color.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/color
+// @link http://clrs.cc
+
+$ucss-color: (
+  "navy":    #001F3F,
+  "blue":    #0074D9,
+  "aqua":    #7FDBFF,
+  "teal":    #39CCCC,
+  "olive":   #3D9970,
+  "green":   #2ECC40,
+  "lime":    #01FF70,
+  "yellow":  #FFDC00,
+  "orange":  #FF851B,
+  "red":     #FF4136,
+  "maroon":  #85144B,
+  "fuchsia": #F012BE,
+  "purple":  #B10DC9,
+  "black":   #111111,
+  "gray":    #AAAAAA,
+  "silver":  #DDDDDD,
+  "white":   #FFFFFF
+) !default;
+
+@include ucss-export(color, $ucss-color);
+
+// Opacity.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/opacity
+
+$ucss-opacity: (
+  "opaque":      1,
+  "transparent": 0,
+  "half":        .5
+) !default;
+
+@include ucss-export(opacity, $ucss-opacity);

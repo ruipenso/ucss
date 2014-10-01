@@ -1,0 +1,85 @@
+//
+// Font Properties.
+//
+// Support:
+//
+// * font-family
+// * font-style
+// * font-variant
+// * font-weight
+// * font-size
+// * font
+//
+
+// Font-family.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/font-family
+// @link http://cssfontstack.com
+
+$font-family: (
+  "sans-serif": ("Helvetica Neue", Helvetica, Arial, sans-serif),
+  "serif":      (Georgia, Times, "Times New Roman", serif),
+  "monospaced": ("Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace)
+) !default;
+
+@include ucss-export(font-family, $font-family);
+
+// Font-style.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/font-style
+
+$font-style: (
+  "normal":  normal,
+  "italic":  italic,
+  "oblique": oblique
+) !default;
+
+@include ucss-export(font-style, $font-style);
+
+// Font-variant.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/font-variant
+
+$font-variant: (
+  "normal":     normal,
+  "small-caps": small-caps
+) !default;
+
+@include ucss-export(font-variant, $font-variant);
+
+// Font-weight.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/font-weight
+
+$font-weight: (
+  "normal":  normal,
+  "bold":    bold,
+  "bolder":  bolder,
+  "lighter": lighter
+) !default;
+
+@include ucss-export(font-weight, $font-weight);
+
+// Font-size.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/font-size
+
+$font-size: (
+  "xx-small": 9px,
+  "x-small":  10px,
+  "small":    13px,
+  "medium":   16px,
+  "large":    18px,
+  "x-large":  24px,
+  "xx-large": 32px,
+) !default;
+
+@include ucss-export(font-size, $font-size);
+
+// Font.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/font
+
+$font: () !default;
+
+@include ucss-export(font, $font);

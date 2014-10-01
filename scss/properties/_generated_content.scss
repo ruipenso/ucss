@@ -1,0 +1,42 @@
+//
+// Generated Content Properties.
+//
+// Support:
+//
+// * content
+// * quotes
+// * counter-reset
+// * counter-increment
+//
+
+// Content.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/content
+
+$ucss-content: () !default;
+
+@include ucss-export(content, $ucss-content);
+
+// Quotes.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/quotes
+
+$ucss-quotes: () !default;
+
+@include ucss-export(quotes, $ucss-quotes);
+
+// Counter-reset.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/counter-reset
+
+$ucss-counter-reset: () !default;
+
+@include ucss-export(counter-reset, $ucss-counter-reset);
+
+// Counter-increment.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/counter-increment
+
+$ucss-counter-increment: () !default;
+
+@include ucss-export(counter-increment, $ucss-counter-increment);

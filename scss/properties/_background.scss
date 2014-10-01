@@ -1,0 +1,85 @@
+//
+// Background Properties.
+//
+// Support:
+//
+// * background-color
+// * background-image
+// * background-attachment
+// * background-position
+// * background
+//
+
+// Background-color.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/background-color
+// @link http://clrs.cc
+
+$ucss-background-color: (
+  "navy":    #001F3F,
+  "blue":    #0074D9,
+  "aqua":    #7FDBFF,
+  "teal":    #39CCCC,
+  "olive":   #3D9970,
+  "green":   #2ECC40,
+  "lime":    #01FF70,
+  "yellow":  #FFDC00,
+  "orange":  #FF851B,
+  "red":     #FF4136,
+  "maroon":  #85144B,
+  "fuchsia": #F012BE,
+  "purple":  #B10DC9,
+  "black":   #111111,
+  "gray":    #AAAAAA,
+  "silver":  #DDDDDD,
+  "white":   #FFFFFF
+) !default;
+
+@include ucss-export(background-color, $ucss-background-color);
+
+// Background-image.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/background-image
+
+$ucss-background-image: () !default;
+
+@include ucss-export(background-image, $ucss-background-image);
+
+// Background-repeat.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/background-repeat
+
+$ucss-background-repeat: (
+  "repeat-x":  repeat-x,
+  "repeat-y":  repeat-y,
+  "no-repeat": no-repeat
+) !default;
+
+@include ucss-export(background-repeat, $ucss-background-repeat);
+
+// Background-attachment.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/background-repeat
+
+$ucss-background-attachment: (
+  "scroll": scroll,
+  "fixed":  fixed
+) !default;
+
+@include ucss-export(background-attachment, $ucss-background-attachment);
+
+// Background-position.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/background-position
+
+$ucss-background-position: () !default;
+
+@include ucss-export(background-position, $ucss-background-position);
+
+// Background.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/background
+
+$ucss-background: () !default;
+
+@include ucss-export(background, $ucss-background);

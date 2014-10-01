@@ -1,0 +1,64 @@
+//
+// Margin & Padding Properties.
+//
+// Support:
+//
+// * margin
+// * padding
+//
+// This two properties can be defined as modifier-value and/or
+// as a modifier-map, where the map is composed by individual properties
+// formatted as property-value.
+//
+// Example:
+//
+//     $ucss-margins: (
+//       "modifier": 10px 20px,
+//       "other-modifier": (
+//         margin-top: 10px,
+//         margin-bottom: 10px
+//       )
+//     );
+//
+
+// Margin.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/margin
+
+$ucss-margin: (
+  "zero-all": 0,
+  "zero-vertical": (
+    margin-top:    0,
+    margin-bottom: 0
+  ),
+  "zero-horizontal": (
+    margin-right: 0,
+    margin-left:  0
+  ),
+  "zero-bottom": (
+    margin-bottom: 0
+  )
+) !default;
+
+@include ucss-export(margin, $ucss-margin);
+
+// Padding.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/padding
+
+$ucss-padding: (
+  "zero-all": 0,
+  "zero-vertical": (
+    margin-top:    0,
+    margin-bottom: 0
+  ),
+  "zero-horizontal": (
+    margin-right: 0,
+    margin-left:  0
+  ),
+  "zero-bottom": (
+    margin-bottom: 0
+  )
+) !default;
+
+@include ucss-export(padding, $ucss-padding);

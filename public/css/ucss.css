@@ -1,0 +1,721 @@
+.ucss-background-color--navy {
+  background-color: #001F3F;
+}
+
+.ucss-background-color--blue {
+  background-color: #0074D9;
+}
+
+.ucss-background-color--aqua {
+  background-color: #7FDBFF;
+}
+
+.ucss-background-color--teal {
+  background-color: #39CCCC;
+}
+
+.ucss-background-color--olive {
+  background-color: #3D9970;
+}
+
+.ucss-background-color--green {
+  background-color: #2ECC40;
+}
+
+.ucss-background-color--lime {
+  background-color: #01FF70;
+}
+
+.ucss-background-color--yellow {
+  background-color: #FFDC00;
+}
+
+.ucss-background-color--orange {
+  background-color: #FF851B;
+}
+
+.ucss-background-color--red {
+  background-color: #FF4136;
+}
+
+.ucss-background-color--maroon {
+  background-color: #85144B;
+}
+
+.ucss-background-color--fuchsia {
+  background-color: #F012BE;
+}
+
+.ucss-background-color--purple {
+  background-color: #B10DC9;
+}
+
+.ucss-background-color--black {
+  background-color: #111111;
+}
+
+.ucss-background-color--gray {
+  background-color: #AAAAAA;
+}
+
+.ucss-background-color--silver {
+  background-color: #DDDDDD;
+}
+
+.ucss-background-color--white {
+  background-color: #FFFFFF;
+}
+
+.ucss-background-repeat--repeat-x {
+  background-repeat: repeat-x;
+}
+
+.ucss-background-repeat--repeat-y {
+  background-repeat: repeat-y;
+}
+
+.ucss-background-repeat--no-repeat {
+  background-repeat: no-repeat;
+}
+
+.ucss-background-attachment--scroll {
+  background-attachment: scroll;
+}
+
+.ucss-background-attachment--fixed {
+  background-attachment: fixed;
+}
+
+.ucss-border-style--dotted {
+  border-style: dotted;
+}
+
+.ucss-border-style--dashed {
+  border-style: dashed;
+}
+
+.ucss-border-style--solid {
+  border-style: solid;
+}
+
+.ucss-border-style--double {
+  border-style: double;
+}
+
+.ucss-border-style--groove {
+  border-style: groove;
+}
+
+.ucss-border-style--ridge {
+  border-style: ridge;
+}
+
+.ucss-border-style--inset {
+  border-style: inset;
+}
+
+.ucss-border-style--outset {
+  border-style: outset;
+}
+
+.ucss-color--navy {
+  color: #001F3F;
+}
+
+.ucss-color--blue {
+  color: #0074D9;
+}
+
+.ucss-color--aqua {
+  color: #7FDBFF;
+}
+
+.ucss-color--teal {
+  color: #39CCCC;
+}
+
+.ucss-color--olive {
+  color: #3D9970;
+}
+
+.ucss-color--green {
+  color: #2ECC40;
+}
+
+.ucss-color--lime {
+  color: #01FF70;
+}
+
+.ucss-color--yellow {
+  color: #FFDC00;
+}
+
+.ucss-color--orange {
+  color: #FF851B;
+}
+
+.ucss-color--red {
+  color: #FF4136;
+}
+
+.ucss-color--maroon {
+  color: #85144B;
+}
+
+.ucss-color--fuchsia {
+  color: #F012BE;
+}
+
+.ucss-color--purple {
+  color: #B10DC9;
+}
+
+.ucss-color--black {
+  color: #111111;
+}
+
+.ucss-color--gray {
+  color: #AAAAAA;
+}
+
+.ucss-color--silver {
+  color: #DDDDDD;
+}
+
+.ucss-color--white {
+  color: #FFFFFF;
+}
+
+.ucss-opacity--opaque {
+  opacity: 1;
+}
+
+.ucss-opacity--transparent {
+  opacity: 0;
+}
+
+.ucss-opacity--half {
+  opacity: 0.5;
+}
+
+.ucss-text-align--left {
+  text-align: left;
+}
+
+.ucss-text-align--right {
+  text-align: right;
+}
+
+.ucss-text-align--center {
+  text-align: center;
+}
+
+.ucss-text-align--justify {
+  text-align: justify;
+}
+
+.ucss-text-decoration--none {
+  text-decoration: none;
+}
+
+.ucss-text-decoration--underline {
+  text-decoration: underline;
+}
+
+.ucss-text-decoration--overline {
+  text-decoration: overline;
+}
+
+.ucss-text-decoration--line-through {
+  text-decoration: line-through;
+}
+
+.ucss-text-decoration--blink {
+  text-decoration: blink;
+}
+
+.ucss-text-transform--capitalize {
+  text-transform: capitalize;
+}
+
+.ucss-text-transform--uppercase {
+  text-transform: uppercase;
+}
+
+.ucss-text-transform--lowercase {
+  text-transform: lowercase;
+}
+
+.ucss-text-transform--none {
+  text-transform: none;
+}
+
+.ucss-vertical-align--baseline {
+  vertical-align: baseline;
+}
+
+.ucss-vertical-align--sub {
+  vertical-align: sub;
+}
+
+.ucss-vertical-align--super {
+  vertical-align: super;
+}
+
+.ucss-vertical-align--top {
+  vertical-align: top;
+}
+
+.ucss-vertical-align--text-top {
+  vertical-align: text-top;
+}
+
+.ucss-vertical-align--middle {
+  vertical-align: middle;
+}
+
+.ucss-vertical-align--bottom {
+  vertical-align: bottom;
+}
+
+.ucss-vertical-align--text-bottom {
+  vertical-align: text-bottom;
+}
+
+.ucss-white-space--normal {
+  white-space: normal;
+}
+
+.ucss-white-space--pre {
+  white-space: pre;
+}
+
+.ucss-white-space--nowrap {
+  white-space: nowrap;
+}
+
+.ucss-white-space--pre-wrap {
+  white-space: pre-wrap;
+}
+
+.ucss-white-space--pre-line {
+  white-space: pre-line;
+}
+
+.ucss-direction--ltr {
+  direction: ltr;
+}
+
+.ucss-direction--rtl {
+  direction: rtl;
+}
+
+.ucss-font-family--sans-serif {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.ucss-font-family--serif {
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.ucss-font-family--monospaced {
+  font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+}
+
+.ucss-font-style--normal {
+  font-style: normal;
+}
+
+.ucss-font-style--italic {
+  font-style: italic;
+}
+
+.ucss-font-style--oblique {
+  font-style: oblique;
+}
+
+.ucss-font-variant--normal {
+  font-variant: normal;
+}
+
+.ucss-font-variant--small-caps {
+  font-variant: small-caps;
+}
+
+.ucss-font-weight--normal {
+  font-weight: normal;
+}
+
+.ucss-font-weight--bold {
+  font-weight: bold;
+}
+
+.ucss-font-weight--bolder {
+  font-weight: bolder;
+}
+
+.ucss-font-weight--lighter {
+  font-weight: lighter;
+}
+
+.ucss-font-size--xx-small {
+  font-size: 9px;
+}
+
+.ucss-font-size--x-small {
+  font-size: 10px;
+}
+
+.ucss-font-size--small {
+  font-size: 13px;
+}
+
+.ucss-font-size--medium {
+  font-size: 16px;
+}
+
+.ucss-font-size--large {
+  font-size: 18px;
+}
+
+.ucss-font-size--x-large {
+  font-size: 24px;
+}
+
+.ucss-font-size--xx-large {
+  font-size: 32px;
+}
+
+.ucss-margin--zero-all {
+  margin: 0;
+}
+
+.ucss-margin--zero-vertical {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.ucss-margin--zero-horizontal {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.ucss-margin--zero-bottom {
+  margin-bottom: 0;
+}
+
+.ucss-padding--zero-all {
+  padding: 0;
+}
+
+.ucss-padding--zero-vertical {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.ucss-padding--zero-horizontal {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.ucss-padding--zero-bottom {
+  margin-bottom: 0;
+}
+
+.ucss-list-style-type--disc {
+  list-style-type: disc;
+}
+
+.ucss-list-style-type--circle {
+  list-style-type: circle;
+}
+
+.ucss-list-style-type--square {
+  list-style-type: square;
+}
+
+.ucss-list-style-type--decimal {
+  list-style-type: decimal;
+}
+
+.ucss-list-style-type--decimal-leading-zero {
+  list-style-type: decimal-leading-zero;
+}
+
+.ucss-list-style-type--lower-roman {
+  list-style-type: lower-roman;
+}
+
+.ucss-list-style-type--upper-roman {
+  list-style-type: upper-roman;
+}
+
+.ucss-list-style-type--lower-greek {
+  list-style-type: lower-greek;
+}
+
+.ucss-list-style-type--lower-latin {
+  list-style-type: lower-latin;
+}
+
+.ucss-list-style-type--upper-latin {
+  list-style-type: upper-latin;
+}
+
+.ucss-list-style-type--armenian {
+  list-style-type: armenian;
+}
+
+.ucss-list-style-type--georgian {
+  list-style-type: georgian;
+}
+
+.ucss-list-style-type--lower-alpha {
+  list-style-type: lower-alpha;
+}
+
+.ucss-list-style-type--upper-alpha {
+  list-style-type: upper-alpha;
+}
+
+.ucss-list-style-position--inside {
+  list-style-position: inside;
+}
+
+.ucss-list-style-position--outside {
+  list-style-position: outside;
+}
+
+.ucss-display--inline {
+  display: inline;
+}
+
+.ucss-display--block {
+  display: block;
+}
+
+.ucss-display--list-item {
+  display: list-item;
+}
+
+.ucss-display--run-in {
+  display: run-in;
+}
+
+.ucss-display--inline-block {
+  display: inline-block;
+}
+
+.ucss-display--table {
+  display: table;
+}
+
+.ucss-display--inline-table {
+  display: inline-table;
+}
+
+.ucss-display--table-row-group {
+  display: table-row-group;
+}
+
+.ucss-display--table-header-group {
+  display: table-header-group;
+}
+
+.ucss-display--table-footer-group {
+  display: table-footer-group;
+}
+
+.ucss-display--table-row {
+  display: table-row;
+}
+
+.ucss-display--table-column-group {
+  display: table-column-group;
+}
+
+.ucss-display--table-column {
+  display: table-column;
+}
+
+.ucss-display--table-cell {
+  display: table-cell;
+}
+
+.ucss-display--table-caption {
+  display: table-caption;
+}
+
+.ucss-display--none {
+  display: none;
+}
+
+.ucss-position--static {
+  position: static;
+}
+
+.ucss-position--relative {
+  position: relative;
+}
+
+.ucss-position--absolute {
+  position: absolute;
+}
+
+.ucss-position--fixed {
+  position: fixed;
+}
+
+.ucss-float--left {
+  float: left;
+}
+
+.ucss-float--right {
+  float: right;
+}
+
+.ucss-float--none {
+  float: none;
+}
+
+.ucss-clear--none {
+  clear: none;
+}
+
+.ucss-clear--left {
+  clear: left;
+}
+
+.ucss-clear--right {
+  clear: right;
+}
+
+.ucss-clear--both {
+  clear: both;
+}
+
+.ucss-overflow--visible {
+  overflow: visible;
+}
+
+.ucss-overflow--hidden {
+  overflow: hidden;
+}
+
+.ucss-overflow--scroll {
+  overflow: scroll;
+}
+
+.ucss-overflow--auto {
+  overflow: auto;
+}
+
+.ucss-visibility--visible {
+  visibility: visible;
+}
+
+.ucss-visibility--hidden {
+  visibility: hidden;
+}
+
+.ucss-visibility--collapse {
+  visibility: collapse;
+}
+
+.ucss-cursor--crosshair {
+  cursor: crosshair;
+}
+
+.ucss-cursor--default {
+  cursor: default;
+}
+
+.ucss-cursor--pointer {
+  cursor: pointer;
+}
+
+.ucss-cursor--move {
+  cursor: move;
+}
+
+.ucss-cursor--e-resize {
+  cursor: e-resize;
+}
+
+.ucss-cursor--ne-resize {
+  cursor: ne-resize;
+}
+
+.ucss-cursor--nw-resize {
+  cursor: nw-resize;
+}
+
+.ucss-cursor--n-resize {
+  cursor: n-resize;
+}
+
+.ucss-cursor--se-resize {
+  cursor: se-resize;
+}
+
+.ucss-cursor--sw-resize {
+  cursor: sw-resize;
+}
+
+.ucss-cursor--s-resize {
+  cursor: s-resize;
+}
+
+.ucss-cursor--w-resize {
+  cursor: w-resize;
+}
+
+.ucss-cursor--text {
+  cursor: text;
+}
+
+.ucss-cursor--wait {
+  cursor: wait;
+}
+
+.ucss-cursor--help {
+  cursor: help;
+}
+
+.ucss-cursor--progress {
+  cursor: progress;
+}
+
+.ucss-caption-side--top {
+  caption-side: top;
+}
+
+.ucss-caption-side--bottom {
+  caption-side: bottom;
+}
+
+.ucss-table-layout--auto {
+  table-layout: auto;
+}
+
+.ucss-table-layout--fixed {
+  table-layout: fixed;
+}
+
+.ucss-border-collapse--collapse {
+  border-collapse: collapse;
+}
+
+.ucss-border-collapse--separate {
+  border-collapse: separate;
+}
+
+.ucss-empty-cells--show {
+  empty-cells: show;
+}
+
+.ucss-empty-cells--hide {
+  empty-cells: hide;
+}
+
+/*# sourceMappingURL=ucss.css.map */

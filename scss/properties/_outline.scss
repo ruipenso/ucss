@@ -1,0 +1,55 @@
+//
+// Outline Properties.
+//
+// Support:
+//
+// * outline-width
+// * outline-style
+// * outline-color
+// * outline
+//
+
+// Outline-width.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/outline-width
+
+$ucss-outline-width: (
+  "thin":   thin,
+  "medium": medium,
+  "thick":  thick
+) !default;
+
+@include ucss-export(outline-width, $ucss-outline-width);
+
+// Outline-style.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/outline-style
+
+$ucss-outline-style: (
+  "dotted": dotted,
+  "dashed": dashed,
+  "solid":  solid,
+  "double": double,
+  "groove": groove,
+  "ridge":  ridge,
+  "inset":  inset,
+  "outset": outset
+) !default;
+
+@include ucss-export(outline-width, $ucss-outline-style);
+
+// Outline-color.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/outline-color
+
+$ucss-outline-color: () !default;
+
+@include ucss-export(outline-width, $ucss-outline-color);
+
+// Outline.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/outline
+
+$ucss-outline: () !default;
+
+@include ucss-export(outline, $ucss-outline);

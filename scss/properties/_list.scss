@@ -1,0 +1,60 @@
+//
+// List Properties.
+//
+// Support:
+//
+// * list-style-type
+// * list-style-image
+// * list-style-position
+// * list-style
+//
+
+// List-style-type.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/list-style-type
+
+$ucss-list-style-type: (
+  "disc":                 disc,
+  "circle":               circle,
+  "square":               square,
+  "decimal":              decimal,
+  "decimal-leading-zero": decimal-leading-zero,
+  "lower-roman":          lower-roman,
+  "upper-roman":          upper-roman,
+  "lower-greek":          lower-greek,
+  "lower-latin":          lower-latin,
+  "upper-latin":          upper-latin,
+  "armenian":             armenian,
+  "georgian":             georgian,
+  "lower-alpha":          lower-alpha,
+  "upper-alpha":          upper-alpha
+) !default;
+
+@include ucss-export(list-style-type, $ucss-list-style-type);
+
+// List-style-image.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/list-style-image
+
+$ucss-list-style-image: () !default;
+
+@include ucss-export(list-style-image, $ucss-list-style-image);
+
+// List-style-position.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/list-style-position
+
+$ucss-list-style-position: (
+  "inside":  inside,
+  "outside": outside
+) !default;
+
+@include ucss-export(list-style-position, $ucss-list-style-position);
+
+// List-style.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/list-style
+
+$ucss-list-style: () !default;
+
+@include ucss-export(list-style, $ucss-list-style);

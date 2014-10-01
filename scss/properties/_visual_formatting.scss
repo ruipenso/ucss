@@ -1,0 +1,164 @@
+//
+// Visual Formatting
+//
+
+// Display.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/display
+
+$ucss-display: (
+  "inline":             inline,
+  "block":              block,
+  "list-item":          list-item,
+  "run-in":             run-in,
+  "inline-block":       inline-block,
+  "table":              table,
+  "inline-table":       inline-table,
+  "table-row-group":    table-row-group,
+  "table-header-group": table-header-group,
+  "table-footer-group": table-footer-group,
+  "table-row":          table-row,
+  "table-column-group": table-column-group,
+  "table-column":       table-column,
+  "table-cell":         table-cell,
+  "table-caption":      table-caption,
+  "none":               none
+) !default;
+
+@include ucss-export(display, $ucss-display);
+
+// Position.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/position
+
+$ucss-position: (
+  "static":   static,
+  "relative": relative,
+  "absolute": absolute,
+  "fixed":    fixed
+) !default;
+
+@include ucss-export(position, $ucss-position);
+
+// Top.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/top
+
+$ucss-top: () !default;
+
+@include ucss-export(top, $ucss-top);
+
+// Right.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/right
+
+$ucss-right: () !default;
+
+@include ucss-export(right, $ucss-right);
+
+// Bottom.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/bottom
+
+$ucss-bottom: () !default;
+
+@include ucss-export(bottom, $ucss-bottom);
+
+// Left.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/left
+
+$ucss-left: () !default;
+
+@include ucss-export(left, $ucss-left);
+
+// Float.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/float
+
+$ucss-float: (
+  "left":  left,
+  "right": right,
+  "none":  none
+) !default;
+
+@include ucss-export(float, $ucss-float);
+
+// Clear.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/clear
+
+$ucss-clear: (
+  "none":  none,
+  "left":  left,
+  "right": right,
+  "both":  both
+) !default;
+
+@include ucss-export(clear, $ucss-clear);
+
+// Z-index.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/z-index
+
+$ucss-z-index: () !default;
+
+@include ucss-export(z-index, $ucss-z-index);
+
+// Overflow.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/overflow
+
+$ucss-overflow: (
+  "visible": visible,
+  "hidden":  hidden,
+  "scroll":  scroll,
+  "auto":    auto
+) !default;
+
+@include ucss-export(overflow, $ucss-overflow);
+
+// Clip.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/clip
+
+$ucss-clip: () !default;
+
+@include ucss-export(clip, $ucss-clip);
+
+// Visibility.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/visibility
+
+$ucss-visibility: (
+  "visible":  visible,
+  "hidden":   hidden,
+  "collapse": collapse
+) !default;
+
+@include ucss-export(visibility, $ucss-visibility);
+
+// Cursor.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/cursor
+
+$ucss-cursor: (
+  "crosshair": crosshair,
+  "default":   default,
+  "pointer":   pointer,
+  "move":      move,
+  "e-resize":  e-resize,
+  "ne-resize": ne-resize,
+  "nw-resize": nw-resize,
+  "n-resize":  n-resize,
+  "se-resize": se-resize,
+  "sw-resize": sw-resize,
+  "s-resize":  s-resize,
+  "w-resize":  w-resize,
+  "text":      text,
+  "wait":      wait,
+  "help":      help,
+  "progress":  progress
+) !default;
+
+@include ucss-export(cursor, $ucss-cursor);

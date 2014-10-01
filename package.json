@@ -1,0 +1,9 @@
+{
+  "name": "ucss",
+  "description": "Utility CSS",
+  "version": "1.0.0",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-ruby-sass": "^0.7.1"
+  }
+}

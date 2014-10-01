@@ -1,0 +1,130 @@
+//
+// Text Properties.
+//
+// Support:
+//
+// * text-align
+// * text-decoration
+// * text-indent
+// * text-transform
+// * line-height
+// * vertical-align
+// * letter-spacing
+// * word-spacing
+// * white-space
+// * direction
+//
+
+// Text-align.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/text-align
+
+$ucss-text-align: (
+  "left":    left,
+  "right":   right,
+  "center":  center,
+  "justify": justify
+) !default;
+
+@include ucss-export(text-align, $ucss-text-align);
+
+// Text-decoration.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/text-decoration
+
+$ucss-text-decoration: (
+  "none":         none,
+  "underline":    underline,
+  "overline":     overline,
+  "line-through": line-through,
+  "blink":        blink
+) !default;
+
+@include ucss-export(text-decoration, $ucss-text-decoration);
+
+// Text-indent.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/text-indent
+
+$ucss-text-indent: () !default;
+
+@include ucss-export(text-indent, $ucss-text-indent);
+
+// Text-transform.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/text-transform
+
+$ucss-text-transform: (
+  "capitalize": capitalize,
+  "uppercase":  uppercase,
+  "lowercase":  lowercase,
+  "none":       none
+) !default;
+
+@include ucss-export(text-transform, $ucss-text-transform);
+
+// Line-height.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/line-height
+
+$ucss-line-height: () !default;
+
+@include ucss-export(line-height, $ucss-line-height);
+
+// Vertical-align.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/vertical-align
+
+$ucss-vertical-align: (
+  "baseline":    baseline,
+  "sub":         sub,
+  "super":       super,
+  "top":         top,
+  "text-top":    text-top,
+  "middle":      middle,
+  "bottom":      bottom,
+  "text-bottom": text-bottom
+) !default;
+
+@include ucss-export(vertical-align, $ucss-vertical-align);
+
+// Letter-spacing.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/letter-spacing
+
+$ucss-letter-spacing: () !default;
+
+@include ucss-export(letter-spacing, $ucss-letter-spacing);
+
+// Word-spacing.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/word-spacing
+
+$ucss-word-spacing: () !default;
+
+@include ucss-export(word-spacing, $ucss-word-spacing);
+
+// White-space.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/white-space
+
+$ucss-white-space: (
+  "normal":   normal,
+  "pre":      pre,
+  "nowrap":   nowrap,
+  "pre-wrap": pre-wrap,
+  "pre-line": pre-line
+) !default;
+
+@include ucss-export(white-space, $ucss-white-space);
+
+// Direction.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/direction
+
+$ucss-direction: (
+  "ltr": ltr,
+  "rtl": rtl
+) !default;
+
+@include ucss-export(direction, $ucss-direction);

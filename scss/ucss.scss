@@ -1,0 +1,62 @@
+//
+// UCSS - Utility CSS
+//
+// This library is a configurable collection of reusable utility classes that
+// aims to be used as silent classes (1) or directly at your markup (2).
+//
+// Every property is defined as an array of values that will auto-generate
+// BEM-like multiple classes (optional) and silent classes.
+//
+// We support an extensive list of properties and most of them are already
+// pre-configured with generic values that should be adjusted to your project
+// needs.
+//
+// 1. Extend as silent classes:
+//
+//    .your-class {
+//      @extend %ucss-color--white;
+//      @extend %ucss-background-color--black;
+//    }
+//
+//    .your-other-class {
+//      @extend %ucss-color--white;
+//    }
+//
+// 2. Use generated classes at your markup:
+//
+//    <div class="ucss-color--white ucss-background-color--black"></div>
+//    <div class="ucss-color--white"></div>
+//
+// @link http://docs.webplatform.org/wiki/Category:CSS_Properties
+//
+
+// Settings.
+//
+// Global configuration.
+
+@import "settings";
+
+// Functions & Mixins.
+//
+// Every function and mixin are prefixed by `ucss-` to be namespaced properly
+// and not affect your project.
+
+@import "functions";
+@import "mixins";
+
+// Properties.
+//
+// Even importing all the properties, their can be removed from
+// `$ucss-properties` variable and nothing will be generated.
+
+@import "properties/background";
+@import "properties/border";
+@import "properties/color";
+@import "properties/text";
+@import "properties/font";
+@import "properties/margin_padding";
+@import "properties/list";
+@import "properties/box_size";
+@import "properties/visual_formatting";
+@import "properties/table";
+@import "properties/generated_content";

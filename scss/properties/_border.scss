@@ -1,0 +1,65 @@
+//
+// Border Properties.
+//
+// Support:
+//
+// * border-width
+// * border-color
+// * border-style
+// * border
+//
+// This properties can be defined as modifier-value and/or as a modifier-map,
+// where the map is composed by individual properties formatted as
+// property-value.
+//
+// Example:
+//
+//     $ucss-border: (
+//       "modifier": 1px solid black,
+//       "other-modifier": (
+//         border-top: 1px solid black,
+//         border-bottom: 1px solid black
+//       )
+//     );
+//
+
+// Border-width.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/border-width
+
+$ucss-border-widths: () !default;
+
+@include ucss-export(border-width, $ucss-border-widths);
+
+// Border-color.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/border-width
+
+$ucss-border-colors: () !default;
+
+@include ucss-export(border-color, $ucss-border-colors);
+
+// Border-style.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/border-style
+
+$ucss-border-styles: (
+  "dotted": dotted,
+  "dashed": dashed,
+  "solid":  solid,
+  "double": double,
+  "groove": groove,
+  "ridge":  ridge,
+  "inset":  inset,
+  "outset": outset
+) !default;
+
+@include ucss-export(border-style, $ucss-border-styles);
+
+// Border.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/border-style
+
+$ucss-borders: () !default;
+
+@include ucss-export(border, $ucss-borders);
