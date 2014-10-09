@@ -26,7 +26,7 @@ $ucss-text-align: (
   "justify": justify
 ) !default;
 
-@include ucss-export(text-align, $ucss-text-align);
+@include ucss-export-property(text-align, $ucss-text-align);
 
 // Text-decoration.
 //
@@ -40,7 +40,7 @@ $ucss-text-decoration: (
   "blink":        blink
 ) !default;
 
-@include ucss-export(text-decoration, $ucss-text-decoration);
+@include ucss-export-property(text-decoration, $ucss-text-decoration);
 
 // Text-indent.
 //
@@ -48,7 +48,7 @@ $ucss-text-decoration: (
 
 $ucss-text-indent: () !default;
 
-@include ucss-export(text-indent, $ucss-text-indent);
+@include ucss-export-property(text-indent, $ucss-text-indent);
 
 // Text-transform.
 //
@@ -61,7 +61,7 @@ $ucss-text-transform: (
   "none":       none
 ) !default;
 
-@include ucss-export(text-transform, $ucss-text-transform);
+@include ucss-export-property(text-transform, $ucss-text-transform);
 
 // Line-height.
 //
@@ -69,7 +69,7 @@ $ucss-text-transform: (
 
 $ucss-line-height: () !default;
 
-@include ucss-export(line-height, $ucss-line-height);
+@include ucss-export-property(line-height, $ucss-line-height);
 
 // Vertical-align.
 //
@@ -86,7 +86,7 @@ $ucss-vertical-align: (
   "text-bottom": text-bottom
 ) !default;
 
-@include ucss-export(vertical-align, $ucss-vertical-align);
+@include ucss-export-property(vertical-align, $ucss-vertical-align);
 
 // Letter-spacing.
 //
@@ -94,7 +94,7 @@ $ucss-vertical-align: (
 
 $ucss-letter-spacing: () !default;
 
-@include ucss-export(letter-spacing, $ucss-letter-spacing);
+@include ucss-export-property(letter-spacing, $ucss-letter-spacing);
 
 // Word-spacing.
 //
@@ -102,7 +102,7 @@ $ucss-letter-spacing: () !default;
 
 $ucss-word-spacing: () !default;
 
-@include ucss-export(word-spacing, $ucss-word-spacing);
+@include ucss-export-property(word-spacing, $ucss-word-spacing);
 
 // White-space.
 //
@@ -116,7 +116,7 @@ $ucss-white-space: (
   "pre-line": pre-line
 ) !default;
 
-@include ucss-export(white-space, $ucss-white-space);
+@include ucss-export-property(white-space, $ucss-white-space);
 
 // Direction.
 //
@@ -127,4 +127,4 @@ $ucss-direction: (
   "rtl": rtl
 ) !default;
 
-@include ucss-export(direction, $ucss-direction);
+@include ucss-export-property(direction, $ucss-direction);

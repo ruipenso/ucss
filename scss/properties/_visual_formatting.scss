@@ -25,7 +25,7 @@ $ucss-display: (
   "none":               none
 ) !default;
 
-@include ucss-export(display, $ucss-display);
+@include ucss-export-property(display, $ucss-display);
 
 // Position.
 //
@@ -38,7 +38,7 @@ $ucss-position: (
   "fixed":    fixed
 ) !default;
 
-@include ucss-export(position, $ucss-position);
+@include ucss-export-property(position, $ucss-position);
 
 // Top.
 //
@@ -46,7 +46,7 @@ $ucss-position: (
 
 $ucss-top: () !default;
 
-@include ucss-export(top, $ucss-top);
+@include ucss-export-property(top, $ucss-top);
 
 // Right.
 //
@@ -54,7 +54,7 @@ $ucss-top: () !default;
 
 $ucss-right: () !default;
 
-@include ucss-export(right, $ucss-right);
+@include ucss-export-property(right, $ucss-right);
 
 // Bottom.
 //
@@ -62,7 +62,7 @@ $ucss-right: () !default;
 
 $ucss-bottom: () !default;
 
-@include ucss-export(bottom, $ucss-bottom);
+@include ucss-export-property(bottom, $ucss-bottom);
 
 // Left.
 //
@@ -70,7 +70,7 @@ $ucss-bottom: () !default;
 
 $ucss-left: () !default;
 
-@include ucss-export(left, $ucss-left);
+@include ucss-export-property(left, $ucss-left);
 
 // Float.
 //
@@ -82,7 +82,7 @@ $ucss-float: (
   "none":  none
 ) !default;
 
-@include ucss-export(float, $ucss-float);
+@include ucss-export-property(float, $ucss-float);
 
 // Clear.
 //
@@ -95,7 +95,7 @@ $ucss-clear: (
   "both":  both
 ) !default;
 
-@include ucss-export(clear, $ucss-clear);
+@include ucss-export-property(clear, $ucss-clear);
 
 // Z-index.
 //
@@ -103,7 +103,7 @@ $ucss-clear: (
 
 $ucss-z-index: () !default;
 
-@include ucss-export(z-index, $ucss-z-index);
+@include ucss-export-property(z-index, $ucss-z-index);
 
 // Overflow.
 //
@@ -116,7 +116,7 @@ $ucss-overflow: (
   "auto":    auto
 ) !default;
 
-@include ucss-export(overflow, $ucss-overflow);
+@include ucss-export-property(overflow, $ucss-overflow);
 
 // Clip.
 //
@@ -124,7 +124,7 @@ $ucss-overflow: (
 
 $ucss-clip: () !default;
 
-@include ucss-export(clip, $ucss-clip);
+@include ucss-export-property(clip, $ucss-clip);
 
 // Visibility.
 //
@@ -136,7 +136,7 @@ $ucss-visibility: (
   "collapse": collapse
 ) !default;
 
-@include ucss-export(visibility, $ucss-visibility);
+@include ucss-export-property(visibility, $ucss-visibility);
 
 // Cursor.
 //
@@ -161,4 +161,4 @@ $ucss-cursor: (
   "progress":  progress
 ) !default;
 
-@include ucss-export(cursor, $ucss-cursor);
+@include ucss-export-property(cursor, $ucss-cursor);

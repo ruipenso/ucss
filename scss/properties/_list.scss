@@ -30,7 +30,7 @@ $ucss-list-style-type: (
   "upper-alpha":          upper-alpha
 ) !default;
 
-@include ucss-export(list-style-type, $ucss-list-style-type);
+@include ucss-export-property(list-style-type, $ucss-list-style-type);
 
 // List-style-image.
 //
@@ -38,7 +38,7 @@ $ucss-list-style-type: (
 
 $ucss-list-style-image: () !default;
 
-@include ucss-export(list-style-image, $ucss-list-style-image);
+@include ucss-export-property(list-style-image, $ucss-list-style-image);
 
 // List-style-position.
 //
@@ -49,7 +49,7 @@ $ucss-list-style-position: (
   "outside": outside
 ) !default;
 
-@include ucss-export(list-style-position, $ucss-list-style-position);
+@include ucss-export-property(list-style-position, $ucss-list-style-position);
 
 // List-style.
 //
@@ -57,4 +57,4 @@ $ucss-list-style-position: (
 
 $ucss-list-style: () !default;
 
-@include ucss-export(list-style, $ucss-list-style);
+@include ucss-export-property(list-style, $ucss-list-style);

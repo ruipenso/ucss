@@ -40,7 +40,7 @@ $ucss-margin: (
   )
 ) !default;
 
-@include ucss-export(margin, $ucss-margin);
+@include ucss-export-property(margin, $ucss-margin);
 
 // Padding.
 //
@@ -49,16 +49,16 @@ $ucss-margin: (
 $ucss-padding: (
   "zero-all": 0,
   "zero-vertical": (
-    margin-top:    0,
-    margin-bottom: 0
+    padding-top:    0,
+    padding-bottom: 0
   ),
   "zero-horizontal": (
-    margin-right: 0,
-    margin-left:  0
+    padding-right: 0,
+    padding-left:  0
   ),
   "zero-bottom": (
-    margin-bottom: 0
+    padding-bottom: 0
   )
 ) !default;
 
-@include ucss-export(padding, $ucss-padding);
+@include ucss-export-property(padding, $ucss-padding);

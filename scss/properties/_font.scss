@@ -22,7 +22,7 @@ $font-family: (
   "monospaced": ("Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace)
 ) !default;
 
-@include ucss-export(font-family, $font-family);
+@include ucss-export-property(font-family, $font-family);
 
 // Font-style.
 //
@@ -34,7 +34,7 @@ $font-style: (
   "oblique": oblique
 ) !default;
 
-@include ucss-export(font-style, $font-style);
+@include ucss-export-property(font-style, $font-style);
 
 // Font-variant.
 //
@@ -45,7 +45,7 @@ $font-variant: (
   "small-caps": small-caps
 ) !default;
 
-@include ucss-export(font-variant, $font-variant);
+@include ucss-export-property(font-variant, $font-variant);
 
 // Font-weight.
 //
@@ -58,7 +58,7 @@ $font-weight: (
   "lighter": lighter
 ) !default;
 
-@include ucss-export(font-weight, $font-weight);
+@include ucss-export-property(font-weight, $font-weight);
 
 // Font-size.
 //
@@ -74,7 +74,7 @@ $font-size: (
   "xx-large": 32px,
 ) !default;
 
-@include ucss-export(font-size, $font-size);
+@include ucss-export-property(font-size, $font-size);
 
 // Font.
 //
@@ -82,4 +82,4 @@ $font-size: (
 
 $font: () !default;
 
-@include ucss-export(font, $font);
+@include ucss-export-property(font, $font);

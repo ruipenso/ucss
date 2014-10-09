@@ -32,7 +32,7 @@ $ucss-color: (
   "white":   #FFFFFF
 ) !default;
 
-@include ucss-export(color, $ucss-color);
+@include ucss-export-property(color, $ucss-color);
 
 // Opacity.
 //
@@ -44,4 +44,4 @@ $ucss-opacity: (
   "half":        .5
 ) !default;
 
-@include ucss-export(opacity, $ucss-opacity);
+@include ucss-export-property(opacity, $ucss-opacity);

@@ -2,16 +2,21 @@
 // Functions to support UCSS.
 //
 
-// Constructs the `classname`, e.g., `.[ucss-][color][--][blue]`.
+// Constructs the `classname` for a given property, e.g.,
+// `.[ucss-][color][--][blue]`.
 //
 // @param $property - A valid CSS property
 // @param $modifier - A property modifier
 
-@function ucss-get-classname($property, $modifier) {
+@function ucss-get-property-classname($property, $modifier) {
   @return #{$ucss-prefix}#{nth(map-get($ucss-properties, $property), 1)}#{$ucss-delimiter}#{$modifier};
 }
 
-@function ucss-generate-class($property) {
+// Check if the a `class` should or not be generated.
+//
+// @param $property - A valid CSS property
+
+@function ucss-generate-property-class($property) {
   @return nth(map-get($ucss-properties, $property), 2);
 }
 
@@ -20,6 +25,6 @@
 // @param $property - A valid CSS property
 // @param $values - A map of values for the given property
 
-@function ucss-use($property, $values) {
+@function ucss-use-property($property, $values) {
   @return map-has-key($ucss-properties, $property) and 0 != length($values);
 }

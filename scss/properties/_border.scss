@@ -29,7 +29,7 @@
 
 $ucss-border-widths: () !default;
 
-@include ucss-export(border-width, $ucss-border-widths);
+@include ucss-export-property(border-width, $ucss-border-widths);
 
 // Border-color.
 //
@@ -37,7 +37,7 @@ $ucss-border-widths: () !default;
 
 $ucss-border-colors: () !default;
 
-@include ucss-export(border-color, $ucss-border-colors);
+@include ucss-export-property(border-color, $ucss-border-colors);
 
 // Border-style.
 //
@@ -54,7 +54,7 @@ $ucss-border-styles: (
   "outset": outset
 ) !default;
 
-@include ucss-export(border-style, $ucss-border-styles);
+@include ucss-export-property(border-style, $ucss-border-styles);
 
 // Border.
 //
@@ -62,4 +62,4 @@ $ucss-border-styles: (
 
 $ucss-borders: () !default;
 
-@include ucss-export(border, $ucss-borders);
+@include ucss-export-property(border, $ucss-borders);

@@ -19,7 +19,7 @@ $ucss-caption-side: (
   "bottom": bottom
 ) !default;
 
-@include ucss-export(caption-side, $ucss-caption-side);
+@include ucss-export-property(caption-side, $ucss-caption-side);
 
 // Table-layout.
 //
@@ -30,7 +30,7 @@ $ucss-table-layout: (
   "fixed": fixed
 ) !default;
 
-@include ucss-export(table-layout, $ucss-table-layout);
+@include ucss-export-property(table-layout, $ucss-table-layout);
 
 // Border-collapse.
 //
@@ -41,7 +41,7 @@ $ucss-border-collapse: (
   "separate": separate
 ) !default;
 
-@include ucss-export(border-collapse, $ucss-border-collapse);
+@include ucss-export-property(border-collapse, $ucss-border-collapse);
 
 // Border-spacing.
 //
@@ -49,7 +49,7 @@ $ucss-border-collapse: (
 
 $ucss-border-spacing: () !default;
 
-@include ucss-export(border-spacing, $ucss-border-spacing);
+@include ucss-export-property(border-spacing, $ucss-border-spacing);
 
 // Empty-cells.
 //
@@ -60,4 +60,4 @@ $ucss-empty-cells: (
   "hide": hide
 ) !default;
 
-@include ucss-export(empty-cells, $ucss-empty-cells);
+@include ucss-export-property(empty-cells, $ucss-empty-cells);

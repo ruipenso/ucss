@@ -15,7 +15,7 @@
 
 $ucss-content: () !default;
 
-@include ucss-export(content, $ucss-content);
+@include ucss-export-property(content, $ucss-content);
 
 // Quotes.
 //
@@ -23,7 +23,7 @@ $ucss-content: () !default;
 
 $ucss-quotes: () !default;
 
-@include ucss-export(quotes, $ucss-quotes);
+@include ucss-export-property(quotes, $ucss-quotes);
 
 // Counter-reset.
 //
@@ -31,7 +31,7 @@ $ucss-quotes: () !default;
 
 $ucss-counter-reset: () !default;
 
-@include ucss-export(counter-reset, $ucss-counter-reset);
+@include ucss-export-property(counter-reset, $ucss-counter-reset);
 
 // Counter-increment.
 //
@@ -39,4 +39,4 @@ $ucss-counter-reset: () !default;
 
 $ucss-counter-increment: () !default;
 
-@include ucss-export(counter-increment, $ucss-counter-increment);
+@include ucss-export-property(counter-increment, $ucss-counter-increment);

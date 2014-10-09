@@ -19,7 +19,7 @@ $ucss-outline-width: (
   "thick":  thick
 ) !default;
 
-@include ucss-export(outline-width, $ucss-outline-width);
+@include ucss-export-property(outline-width, $ucss-outline-width);
 
 // Outline-style.
 //
@@ -36,7 +36,7 @@ $ucss-outline-style: (
   "outset": outset
 ) !default;
 
-@include ucss-export(outline-width, $ucss-outline-style);
+@include ucss-export-property(outline-width, $ucss-outline-style);
 
 // Outline-color.
 //
@@ -44,7 +44,7 @@ $ucss-outline-style: (
 
 $ucss-outline-color: () !default;
 
-@include ucss-export(outline-width, $ucss-outline-color);
+@include ucss-export-property(outline-width, $ucss-outline-color);
 
 // Outline.
 //
@@ -52,4 +52,4 @@ $ucss-outline-color: () !default;
 
 $ucss-outline: () !default;
 
-@include ucss-export(outline, $ucss-outline);
+@include ucss-export-property(outline, $ucss-outline);

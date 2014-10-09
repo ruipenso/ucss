@@ -12,7 +12,7 @@
     "sass",
     "ocss"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",

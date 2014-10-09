@@ -35,7 +35,7 @@ $ucss-background-color: (
   "white":   #FFFFFF
 ) !default;
 
-@include ucss-export(background-color, $ucss-background-color);
+@include ucss-export-property(background-color, $ucss-background-color);
 
 // Background-image.
 //
@@ -43,7 +43,7 @@ $ucss-background-color: (
 
 $ucss-background-image: () !default;
 
-@include ucss-export(background-image, $ucss-background-image);
+@include ucss-export-property(background-image, $ucss-background-image);
 
 // Background-repeat.
 //
@@ -55,7 +55,7 @@ $ucss-background-repeat: (
   "no-repeat": no-repeat
 ) !default;
 
-@include ucss-export(background-repeat, $ucss-background-repeat);
+@include ucss-export-property(background-repeat, $ucss-background-repeat);
 
 // Background-attachment.
 //
@@ -66,7 +66,7 @@ $ucss-background-attachment: (
   "fixed":  fixed
 ) !default;
 
-@include ucss-export(background-attachment, $ucss-background-attachment);
+@include ucss-export-property(background-attachment, $ucss-background-attachment);
 
 // Background-position.
 //
@@ -74,7 +74,7 @@ $ucss-background-attachment: (
 
 $ucss-background-position: () !default;
 
-@include ucss-export(background-position, $ucss-background-position);
+@include ucss-export-property(background-position, $ucss-background-position);
 
 // Background.
 //
@@ -82,4 +82,4 @@ $ucss-background-position: () !default;
 
 $ucss-background: () !default;
 
-@include ucss-export(background, $ucss-background);
+@include ucss-export-property(background, $ucss-background);

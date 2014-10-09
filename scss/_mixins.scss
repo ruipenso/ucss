@@ -25,29 +25,17 @@
 // @param $modifier - A modifier string
 // @param $value - A valid value for the given property or a property-value map
 
-@mixin ucss-generate-class($property, $modifier, $value) {
-  $classname: ucss-get-classname($property, $modifier);
+@mixin ucss-generate-property($property, $modifier, $value) {
+  $classname: ucss-get-property-classname($property, $modifier);
 
   %#{$classname} {
     @include ucss-property($property, $value);
   }
 
-  @if (ucss-generate-class($property)) {
+  @if (ucss-generate-property-class($property)) {
     .#{$classname} {
       @extend %#{$classname};
     }
-  }
-}
-
-// Generate multiple classes.
-//
-// @param $property - A valid CSS property
-// @param $modifier - A modifier string
-// @param $values - A map of values for the given property
-
-@mixin ucss-generate-classes($property, $values) {
-  @each $modifier, $value in $values {
-    @include ucss-generate-class($property, $modifier, $value);
   }
 }
 
@@ -56,8 +44,10 @@
 // @param $property - A valid CSS property
 // @param $values - A map of values for the given property
 
-@mixin ucss-export($property, $values) {
-  @if (ucss-use($property, $values)) {
-    @include ucss-generate-classes($property, $values);
+@mixin ucss-export-property($property, $values) {
+  @if (ucss-use-property($property, $values)) {
+    @each $modifier, $value in $values {
+      @include ucss-generate-property($property, $modifier, $value);
+    }
   }
 }
