@@ -116,3 +116,15 @@ $ucss-properties: (
   counter-reset:     ("counter-reset", $ucss-generate-classes),
   counter-increment: ("counter-increment", $ucss-generate-classes)
 ) !default;
+
+// Defines which components will be generated.
+//
+// The following list contains all the supported components and you can remove
+// the undesired components.
+//
+// The first parameter defines the component name used for the class naming and
+// the second paramenter allows to generate or not the CSS classes.
+
+$ucss-components: (
+  button: ("button", $ucss-generate-classes)
+) !default;

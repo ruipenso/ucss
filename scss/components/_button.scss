@@ -1,0 +1,41 @@
+//
+// Buttons.
+//
+// Create buttons.
+//
+
+//
+// Mixins.
+//
+
+// Creates a button base style.
+
+@mixin ucss-button() {
+  position: relative;
+
+  display: inline-block;
+
+  line-height: normal;
+  text-align: center;
+  text-decoration: none;
+
+  cursor: pointer;
+  border-style: none;
+  -webkit-appearance: none;
+}
+
+// Generate a button silent class and class (if defined at `settings`).
+
+@if (ucss-use-component(button)) {
+  $button-classname: ucss-get-component-classname(button);
+
+  %#{$button-classname} {
+    @include ucss-button();
+  }
+
+  @if (ucss-generate-component-class(button)) {
+    .#{$button-classname} {
+      @extend %#{$button-classname};
+    }
+  }
+}
