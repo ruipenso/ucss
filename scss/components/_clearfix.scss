@@ -1,0 +1,39 @@
+//
+// Clearfix.
+//
+// Micro clearfix.
+//
+
+//
+// Mixins.
+//
+
+// Micro clearfix
+
+@mixin ucss-clearfix() {
+  &::after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+//
+// Classes.
+//
+
+// Generate a silent class and class (if defined at `settings`).
+
+@if (ucss-use-component(clearfix)) {
+  $clearfix-classname: ucss-get-component-classname(clearfix);
+
+  %#{$clearfix-classname} {
+    @include ucss-clearfix();
+  }
+
+  @if (ucss-generate-component-class(clearfix)) {
+    .#{$clearfix-classname} {
+      @extend %#{$clearfix-classname};
+    }
+  }
+}
