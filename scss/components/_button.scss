@@ -1,0 +1,80 @@
+//
+// Buttons.
+//
+// Create buttons.
+//
+
+//
+// Variables.
+//
+
+// Default button style.
+
+$ucss-button: (
+  normal: (
+    padding:    2px 6px 3px,
+    color:      #FFFFFF,
+    background: #C0C0C0,
+    border:     none
+  ),
+  hover: (
+    color:      #FFFFFF,
+    background: lighten(#C0C0C0, 5%)
+  ),
+  active: (
+    color:      #FFFFFF,
+    background: lighten(#C0C0C0, 10%)
+  )
+) !default;
+
+//
+// Mixins.
+//
+
+// Normalize button style cross-browser.
+//
+// @param $states - state-properties map of button states.
+
+@mixin ucss-button($states: $ucss-button) {
+  display: inline-block;
+
+  line-height: normal;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+
+  cursor: pointer;
+  user-select: none;
+
+  -webkit-appearance: none;
+
+  @include ucss-process-properties(map-get($ucss-button, normal));
+
+  &:hover {
+    @include ucss-process-properties(map-get($ucss-button, hover));
+  }
+
+  &:active {
+    @include ucss-process-properties(map-get($ucss-button, active));
+  }
+}
+
+//
+// Classes.
+//
+
+// Generate a button silent class and class (if defined at `settings`).
+
+@if (ucss-use-component(button)) {
+  $button-classname: ucss-get-component-classname(button);
+
+  %#{$button-classname} {
+    @include ucss-button();
+  }
+
+  @if (ucss-generate-component-class(button)) {
+    .#{$button-classname} {
+      @extend %#{$button-classname};
+    }
+  }
+}
