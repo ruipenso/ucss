@@ -44,6 +44,13 @@
 @import "functions";
 @import "mixins";
 
+// Components.
+//
+// Even importing all the components, their can be removed from
+// `$ucss-components` variable and nothing will be generated.
+
+@import "components/button";
+
 // Properties.
 //
 // Even importing all the properties, their can be removed from

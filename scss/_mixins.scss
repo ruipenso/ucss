@@ -2,6 +2,10 @@
 // Mixins to help generating stuff.
 //
 
+//
+// Property related mixins.
+//
+
 // Property.
 //
 // @param $property - A valid CSS property
@@ -49,5 +53,19 @@
     @each $modifier, $value in $values {
       @include ucss-generate-property($property, $modifier, $value);
     }
+  }
+}
+
+//
+// Component related mixins.
+//
+
+// Process properties.
+//
+// @param $properties - property-value map
+
+@mixin ucss-process-properties($properties) {
+  @each $property, $value in $properties {
+    #{$property}: $value;
   }
 }
