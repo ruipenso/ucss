@@ -1,0 +1,46 @@
+//
+// Accessibility.
+//
+// Accessibility helpers.
+//
+
+//
+// Mixins.
+//
+
+// Hide content screen-reader friendly.
+
+@mixin ucss-accessibility {
+  position: absolute;
+  overflow: hidden;
+
+  margin: -1px;
+  padding: 0;
+
+  height: 1px;
+  width: 1px;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+}
+
+//
+// Classes.
+//
+
+// Generate a silent class and class (if defined at `settings`).
+
+@if (ucss-use-component(accessibility)) {
+  $accessibility-classname: ucss-get-component-classname(accessibility);
+
+  %#{$accessibility-classname} {
+    @include ucss-accessibility();
+  }
+
+  @if (ucss-generate-component-class(accessibility)) {
+    .#{$accessibility-classname} {
+      @extend %#{$accessibility-classname};
+    }
+  }
+}

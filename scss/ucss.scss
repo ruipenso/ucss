@@ -49,6 +49,7 @@
 // Even importing all the components, their can be removed from
 // `$ucss-components` variable and nothing will be generated.
 
+@import "components/accessibility";
 @import "components/button";
 
 // Properties.
