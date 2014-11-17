@@ -2,6 +2,34 @@
 // Functions to support UCSS.
 //
 
+//
+// Component related functions.
+//
+
+// Constructs the `classname` for a given component, e.g., `.[ucss-][button]`.
+//
+// @param $component - A valid component
+
+@function ucss-get-component-classname($component) {
+  @return #{$ucss-prefix}#{nth(map-get($ucss-components, $component), 1)};
+}
+
+@function ucss-generate-component-class($component) {
+  @return nth(map-get($ucss-components, $component), 2);
+}
+
+// Check if the component should be exported.
+//
+// @param $component - A valid component
+
+@function ucss-use-component($component) {
+  @return map-has-key($ucss-components, $component);
+}
+
+//
+// Property related functions.
+//
+
 // Constructs the `classname` for a given property, e.g.,
 // `.[ucss-][color][--][blue]`.
 //
