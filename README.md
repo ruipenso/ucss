@@ -123,6 +123,11 @@ The list of properties included where,
   - (~) border-right
   - (~) border-bottom
   - (~) border-left
+- (-) border-radius
+  - (~) border-top-left-radius
+  - (~) border-top-right-radius
+  - (~) border-bottom-right-radius
+  - (~) border-bottom-left-radius
 
 ### Outline
 

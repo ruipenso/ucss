@@ -35,10 +35,11 @@ $ucss-properties: (
   background:            ("background", $ucss-generate-classes),
 
   // Border
-  border-width: ("border-width", $ucss-generate-classes),
-  border-color: ("border-color", $ucss-generate-classes),
-  border-style: ("border-style", $ucss-generate-classes),
-  border:       ("border", $ucss-generate-classes),
+  border-width:  ("border-width", $ucss-generate-classes),
+  border-color:  ("border-color", $ucss-generate-classes),
+  border-style:  ("border-style", $ucss-generate-classes),
+  border:        ("border", $ucss-generate-classes),
+  border-radius: ("border-radius", $ucss-generate-classes),
 
   // Outline
   outline-width: ("outline-width", $ucss-generate-classes),

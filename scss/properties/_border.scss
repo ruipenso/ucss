@@ -63,3 +63,12 @@ $ucss-border-styles: (
 $ucss-borders: () !default;
 
 @include ucss-export-property(border, $ucss-borders);
+
+// Border-radius.
+//
+// @link http://docs.webplatform.org/wiki/css/properties/border-radius
+
+$ucss-border-radiuses: () !default;
+
+@include ucss-export-property(border-radius, $ucss-border-radiuses);
+
