@@ -128,5 +128,6 @@ $ucss-properties: (
 
 $ucss-components: (
   accessibility: ("accessibility", $ucss-generate-classes),
-  button:        ("button", $ucss-generate-classes)
+  button:        ("button", $ucss-generate-classes),
+  clearfix:      ("clearfix", $ucss-generate-classes),
 ) !default;
