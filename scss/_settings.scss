@@ -127,5 +127,6 @@ $ucss-properties: (
 // the second paramenter allows to generate or not the CSS classes.
 
 $ucss-components: (
-  button: ("button", $ucss-generate-classes)
+  accessibility: ("accessibility", $ucss-generate-classes),
+  button:        ("button", $ucss-generate-classes)
 ) !default;
