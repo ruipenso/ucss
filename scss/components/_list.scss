@@ -1,0 +1,65 @@
+//
+// List.
+//
+// Default lists styling used on `ul` and `ol` elements.
+//
+
+//
+// Mixins.
+//
+
+// Remove `ul` default bullets.
+
+@mixin ucss-list-unstyled() {
+  padding-left: 0;
+
+  list-style: none;
+}
+
+// Creates an "inline" list.
+
+@mixin ucss-list-inline() {
+  @include ucss-list-unstyled;
+
+  > li {
+    display: inline-block;
+  }
+}
+
+//
+// Classes.
+//
+
+// Generate an "unstyled" list silent class
+// and class (if defined at `settings`).
+
+@if (ucss-use-component(list-unstyled)) {
+  $list-unstyled-classname: ucss-get-component-classname(list-unstyled);
+
+  %#{$list-unstyled-classname} {
+    @include ucss-list-unstyled();
+  }
+
+  @if (ucss-generate-component-class(list-unstyled)) {
+    .#{$list-unstyled-classname} {
+      @extend %#{$list-unstyled-classname};
+    }
+  }
+}
+
+// Generate an "inline" list silent class
+// and class (if defined at `settings`).
+
+@if (ucss-use-component(list-inline)) {
+  $list-inline-classname: ucss-get-component-classname(list-inline);
+
+  %#{$list-inline-classname} {
+    @include ucss-list-inline();
+  }
+
+  @if (ucss-generate-component-class(list-inline)) {
+    .#{$list-inline-classname} {
+      @extend %#{$list-inline-classname};
+    }
+  }
+}
