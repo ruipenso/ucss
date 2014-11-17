@@ -1,0 +1,82 @@
+//
+// Media-Queries.
+//
+// Manage device breakpoints.
+//
+
+//
+// VARIABLES
+//
+
+// Breakpoints.
+//
+// @link http://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints
+
+$ucss-media-queries: (
+  // Phones
+  phone:           "only screen and (min-device-width: 320px) and (max-device-width: 480px)",
+  phone-landscape: "only screen and (min-width: 321px)",
+  phone-portrait:  "only screen and (max-width: 320px)",
+  // Tablets
+  tablet:           "only screen and (min-device-width: 768px) and (max-device-width: 1024px)",
+  tablet-landscape: "only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)",
+  tablet-portrait:  "only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)",
+  // Desktops & Laptops
+  small:   "only screen and (min-width: 768px)",
+  medium:  "only screen and (min-width: 1024px)",
+  large:   "only screen and (min-width: 1440px)",
+  x-large: "only screen and (min-width: 1920px)",
+  // Custom devices
+  ipad3-landscape:       "only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)",
+  ipad3-portrait:        "only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)",
+  iphone4-landscape:     "only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)",
+  iphone4-portrait:      "only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2)",
+  iphone5-landscape:     "only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)",
+  iphone5-portrait:      "only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)",
+  iphone6-landscape:     "only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)",
+  iphone6-portrait:      "only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)",
+  iphone6plus-landscape: "only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)",
+  iphone6plus-portrait:  "only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)",
+  samsung-s3-landscape:  "only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)",
+  samsung-s3-portrait:   "only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)",
+  samsung-s4-landscape:  "only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)",
+  samsung-s4-portrait:   "only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)",
+  samsung-s5-landscape:  "only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)",
+  samsung-s5-portrait:   "only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)"
+) !default;
+
+//
+// MIXINS
+//
+
+// Creates a `breakpoint`.
+//
+// @param $breakpoint - A key from `$ucss-media-queries` or a `media-query`.
+
+@mixin ucss-breakpoint($breakpoint) {
+  @if (map-has($ucss-media-queries, $breakpoint)) {
+    $query: map-get($ucss-media-queries, $breakpoint);
+  }
+
+  @else {
+    $query: $breakpoint;
+  }
+
+  @media #{$query} {
+    @content;
+  }
+}
+
+// Media-query for `retina`.
+
+@mixin ucss-retina() {
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    @content;
+  }
+}
